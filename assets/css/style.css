@@ -4,18 +4,24 @@
   box-sizing: border-box;
   list-style: none;
   font-family: Arial, Helvetica, sans-serif;
+  color: #7B7D81;
 }
 
-.debug{
+list-icon::before{
+  font-family: "font-awesome";
+}
+
+.debg{
   background-color: rgba(9, 127, 9, 0.18);
   min-width: 10px;
   min-height: 30px;
   border: 1px solid black;
 }
 
+/****************** STRUTTURA ************/
 .container{
-margin: 0 auto;
-width: 95%
+  margin: 0 auto;
+  width: 95%
 }
 
 .row{
@@ -23,16 +29,26 @@ width: 95%
   display: flex;
 }
 
-.card{
+.col{
   width: calc(100% / 6);
-
+  
 }
 
 .bar{
   height: 80px;
 }
+/****************** /STRUTTURA ************/
 
 /***************** UTILITY *************/
+
+img{
+  max-height: 100%;
+}
+
+.bold{
+  font-weight: bold;
+}
+
 .d-flex{
   display: flex;
 }
@@ -45,6 +61,13 @@ width: 95%
   justify-content: space-between;
 }
 
+.white{
+  color: white;
+}
+
+.green{
+  color: #B3FF32;
+}
 
 /***************** MAIN ******************/
 
@@ -54,26 +77,77 @@ main{
 }
 
 main .aside{
+  display: flex;
+  flex-direction: column;
   width: 220px;
+  background-color: black;
+  padding-left: 20px;
+  font-size: .9rem;
+  font-weight: 600;
 }
 
 main .content{
-  width: 100%;
+ width: calc(100% - 220px);
   overflow: auto;
 }
 
 /***************** ASIDE ******************/
-.aside-header{
-  height: 50px;
-}
 
 .aside-footer{
-  height: 80px;
+  padding-top: 5px;
+  height: 65px;
 }
 
 .aside-main{
-height: calc(100% - 130px);
+height: calc(100% - 160px);
 overflow: auto; 
+}
+.aside-header .logo{
+width: 140px;  
+margin: 20px 0 20px 0;
+}
+
+.aside-header .logo-mini{
+display: none;
+}
+
+.aside-main .playlist{
+  margin-top: 7px;
+}
+
+.aside-main img.icon{
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.aside-main .txt{
+  line-height: 25px;
+}
+
+.aside-main .playlist li{
+  margin-top: 10px;
+}
+
+.aside-footer .download {
+  line-height: 15px;
+}
+.aside-footer .download img{
+  width: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.aside-footer .profile{
+  line-height: 20px;
+  margin-top: 10px
+}
+.aside-footer .profile img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: #7B7D81;
+  border-radius: 50%;
 }
 
 /***************** ASIDE ******************/
@@ -92,7 +166,7 @@ overflow: auto;
 /************* RESPONSIVE ************/
 
 @media (max-width: 1100px){
-  .card{
+  .col{
     width: calc(100% / 4);
   }
   .content-main .row{
@@ -101,15 +175,52 @@ overflow: auto;
 }
 
 @media (max-width: 700px) {
-  .card{
+  .col{
     width: calc(100% / 2);
   }
 }
 
 @media (max-width: 600px){
   main .aside{
-    width: 50px;
+    width: 40px;
+    align-items: center;
+    padding-left: 0;
   }
+
+  main .content{
+    width: calc(100% - 40px);
+  }
+
+  .aside-header .logo,
+  .txt,
+  hr{
+    display: none;
+  }
+
+  .aside-header .logo-mini{
+    display: block;
+    width: 20px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+  }
+
+  .aside-main img.icon{
+    width: 18px;
+    height: 18px;
+    margin-bottom: 5px;
+  }
+
+  .aside-main{
+    height: 100%;
+  }
+
+  .aside-footer{
+    margin-bottom: 10px;
+  }
+  .aside-footer p{
+    display: none;
+  }
+
 }
 
 @media (max-height: 350px){
@@ -120,8 +231,5 @@ overflow: auto;
     display: none;
   }
 
-  p.txt{
-    display: none;
-  }
+ }
 }
-

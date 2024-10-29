@@ -7,57 +7,71 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-<main>
+ <main>
+    <!--------------- aside --------->
     <div class="aside debug">
       <div class="aside-header">
-        <div class="logo debug"></div>
+        <img src="./assets/img/logo.svg" alt="" class="logo">
+        <img src="./assets/img/logo-small.svg" alt="" class="logo-mini">
       </div>
       
       <div class="aside-main">
         <ul class="debug">
-          <li>
-            <p class="list-icon home"></p>
-            <p class="txt"></p>
+          <li class="row">
+            <img class="icon" src="./assets/img/home.svg" alt="">
+            <p class="txt home">Home</p>
           </li> 
-          <li>
-            <p class="list-icon search"></p>
-            <p class="txt"></p>
+          <li class="row">
+            <img class="icon" src="./assets/img/search.svg" alt="">
+            <p class="txt">Cerca</p>
           </li> 
-          <li>
-            <p class="list-icon library"></p>
-            <p class="txt"></p>
+          <li class="row">
+            <img class="icon" src="./assets/img/libreria.svg" alt="">
+            <p class="txt">La tua libreria</p>
           </li> 
           
         </ul>
-
-        <div class="debug"></div>
-
-        <ul class="playlist debug">
-          <li class="list-icon add"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-
-      </div>
-
+        <section class="playlist">
+          <div class="bold white txt debug">PLAYLIST</div>
+        
+          <ul class="txt debug">
+            <li>Crea playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+          
+          </ul>
+        </section>
+     </div>
+      
       <div class="aside-footer debug">
-        <p></p>
+        <div class="download d-flex">
+         <img src="./assets/img/download.svg" alt="" >
+         <p>Installa app</p>
+        </div>
+     
         <hr>
-        <p></p>
+        <div class="profile d-flex">
+         <img src="./assets/img/profile.svg" alt="" >
+         <p class="bold white">John Doe</p>
+        </div>
       </div>
-
+      
     </div>
-
+    <!--------------- /aside --------->
+    
+   <!--------------- content --------->
     <div class="content debug">
+  
       <div class="content-header debug"></div>
+  
       <div class="content-main debug">
         <div class="container debug">
-          <section class="row categorie just-center debug">
+  
+          <div class="row categorie just-center debug">
             <ul class="d-flex">
               <li class="debug"></li>
               <li class="debug"></li>
@@ -66,42 +80,47 @@
               <li class="debug"></li>
               <li class="debug"></li>
             </ul>
-          </section>
+          </div>
+  
           <h2></h2>
           <div class="row recent debug">
-            
-              <div class="card debug"></div>
-              <div class="card debug"></div>
-              <div class="card debug"></div>
-              <div class="card debug"></div>
-              <div class="card debug"></div>
-              <div class="card debug"></div>
-            
+            <div clas="col debug"></div>
+            <div class="col debug"></div>
+            <div class="col debug"></div>
+            <div class="col debug"></div>
+            <div class="col debug"></div>
+            <div class="col debug"></div>
           </div>
+  
+          <h2></h2>
+         <p></p>
+          <div class="row per-te">
+            <div class="col debug"></div>
+            <div class="col debug"></div>
+          </div>
+  
+  
           <h2></h2>
           <p></p>
-          <section class="row per-te">
-            <div class="card debug"></div>
-            <div class="card debug"></div>
-          </section>
-          <h2></h2>
-          <p></p>
-          <section class="row popolari debug">
-
-            <div class="card debug"></div>
-            <div class="card debug"></div>
-          </section>
+          <div class="row popolari debug">
+            <div class="col debug"></div>
+            <div class="col debug"></div>
+          </div>
+  
         </div>
       </div>
     </div>
-
-  </main> 
+   <!--------------- /content ---------> 
+ </main>   
+    <!--------------- bar --------->
+  
   <div class="bar row just-between debug">
     <div class="brano debug"></div>
     <div class="riproduzione debug"></div>
     <div class="comandi debug"></div>
   </div>
-  
+ <!--------------- /bar --------->
+
   
 </body>
 </html>
