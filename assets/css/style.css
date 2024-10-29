@@ -6,24 +6,51 @@
 
 .debug{
   background-color: rgba(9, 127, 9, 0.18);
-  min-width: 150px;
+  min-width: px;
   min-height: 30px;
   border: 1px solid black;
 }
+
+
+.bar{
+  height: 80px;
+}
+.aside-header{
+  height: 50px;
+}
+
+.aside-footer{
+  height: 80px;
+}
+
+.aside-main{
+height: calc(100% - 130px);
+overflow: auto; 
+}
+
+
+
 main{
   height: calc(100vh - 80px);
   display: flex;
 }
 
-.bar{
-  height: 80px;
+main .aside{
+  width: 220px;
 }
 
-main .bar-laterale{
-  flex-basis: 20%;
-}
-
-main .container{
-  flex-basis: 80%;
+main .content{
+  width: 100%;
   overflow: auto;
 }
+
+
+
+/************* RESPONSIVE ************/
+
+@media (max-width: 600px){
+  main .aside{
+    width: 50px;
+  }
+}
+
