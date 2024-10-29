@@ -3,3 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.debug{
+  background-color: rgba(9, 127, 9, 0.18);
+  min-width: 150px;
+  min-height: 30px;
+  border: 1px solid black;
+}
+main{
+  height: calc(100vh - 80px);
+  display: flex;
+}
+
+.bar{
+  height: 80px;
+}
+
+main .bar-laterale{
+  flex-basis: 20%;
+}
+
+main .container{
+  flex-basis: 80%;
+  overflow: auto;
+}
