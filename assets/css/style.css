@@ -35,22 +35,6 @@
  position: relative;
 }
 
-
-.card i{
-  background-color: rgba(0, 0, 0, 0.345);
-  font-size: 4rem;
-  color: white;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  text-align: center;
-  padding-top: 30%;
-  display: none;
- 
-}
-
 .bar{
   height: 80px;
 }
@@ -71,6 +55,11 @@ img{
   display: flex;
 }
 
+.d-col{
+  display: flex;
+  flex-direction: column;
+}
+
 .txt-center{
   text-align: center;
 }
@@ -80,6 +69,10 @@ img{
 
 .just-between{
   justify-content: space-between;
+}
+
+.a-center{
+  align-items: center;
 }
 
 .white{
@@ -118,6 +111,7 @@ main .aside{
 }
 
 main .content{
+ background-color: black; 
  width: calc(100% - 220px);
   overflow: auto;
 }
@@ -134,11 +128,13 @@ display: none;
 
 .aside-main{
 height: calc(100% - 160px);
-overflow: auto; 
+
 }
 
 .aside-main .playlist{
   margin-top: 7px;
+  height: calc(100% - 120px);
+  overflow: auto; 
 }
 
 .aside-main img.icon{
@@ -154,7 +150,9 @@ overflow: auto;
 
 .aside-main .playlist li{
   margin-top: 10px;
+ 
 }
+
 .aside-footer{
   padding-top: 5px;
   height: 65px;
@@ -163,15 +161,18 @@ overflow: auto;
 .aside-footer .download {
   line-height: 15px;
 }
+
 .aside-footer .download img{
   width: 15px;
   margin-right: 10px;
   margin-bottom: 10px;
 }
+
 .aside-footer .profile{
   line-height: 20px;
   margin-top: 10px
 }
+
 .aside-footer .profile img{
   width: 20px;
   height: 20px;
@@ -184,23 +185,52 @@ overflow: auto;
 
 /***************** CONTENT *****************/
 
-.content-header{
+.content-header {
   height: 80px;
   justify-content: flex-end;
   align-items: center;
   line-height: 30px;
   background-color: rgb(0, 0, 0);
+ 
 }
-.content-main{
-  padding-top: 10px;
-}
+
 .categorie li{
   padding: 5px 5px 2px 5px;
 }
 
+.card i{
+  background-color: rgba(0, 0, 0, 0.345);
+  font-size: 4rem;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  padding-top: 35%;
+  display: none;
+ 
+}
 /***************** /CONTENT *****************/
 
 /****************** /MAIN *******************/
+/****************** BAR *******************/
+.bar{
+  padding: 10px 0 10px 0px;
+}
+
+.bar .brano{
+  width: 230px;
+}
+.bar div{
+  margin: 0 30px 0 10px;
+}
+
+
+
+
+/****************** /BAR *******************/
 
 /******************* AZIONI *******************/
 .card:hover i{
@@ -268,12 +298,15 @@ overflow: auto;
 }
 
 @media (max-height: 350px){
-  .aside-main{
-    height: 100%;
-  }
+ .aside-main{
+  height: 100%;
+  overflow: hidden;
+ }
   .aside-footer{
     display: none;
   }
-
+  .playlist{
+    display: none;
+  }
  }
 
