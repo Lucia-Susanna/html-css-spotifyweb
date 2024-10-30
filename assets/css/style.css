@@ -5,13 +5,10 @@
   list-style: none;
   font-family: Arial, Helvetica, sans-serif;
   color: #7B7D81;
+  font-size: .8rem;
 }
 
-list-icon::before{
-  font-family: "font-awesome";
-}
-
-.debg{
+.debug{
   background-color: rgba(9, 127, 9, 0.18);
   min-width: 10px;
   min-height: 30px;
@@ -30,19 +27,42 @@ list-icon::before{
 }
 
 .col{
-  width: calc(100% / 6);
-  
+ width: calc(100% / 6); 
 }
+
+.card{
+ margin: 10px;
+ position: relative;
+}
+
+
+.card i{
+  background-color: rgba(0, 0, 0, 0.345);
+  font-size: 4rem;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  padding-top: 30%;
+  display: none;
+ 
+}
+
+
 
 .bar{
   height: 80px;
 }
+
 /****************** /STRUTTURA ************/
 
 /***************** UTILITY *************/
 
 img{
-  max-height: 100%;
+  max-width: 100%;
 }
 
 .bold{
@@ -53,6 +73,9 @@ img{
   display: flex;
 }
 
+.txt-center{
+  text-align: center;
+}
 .just-center{
   justify-content: center;
 }
@@ -69,6 +92,13 @@ img{
   color: #B3FF32;
 }
 
+.button{
+  border: 1px solid white;
+  border-radius: 15px;
+  height: 30px;
+  padding: 0 25px 0 25px;
+}
+
 /***************** MAIN ******************/
 
 main{
@@ -79,7 +109,7 @@ main{
 main .aside{
   display: flex;
   flex-direction: column;
-  width: 220px;
+  width: 230px;
   background-color: black;
   padding-left: 20px;
   font-size: .9rem;
@@ -92,16 +122,6 @@ main .content{
 }
 
 /***************** ASIDE ******************/
-
-.aside-footer{
-  padding-top: 5px;
-  height: 65px;
-}
-
-.aside-main{
-height: calc(100% - 160px);
-overflow: auto; 
-}
 .aside-header .logo{
 width: 140px;  
 margin: 20px 0 20px 0;
@@ -109,6 +129,11 @@ margin: 20px 0 20px 0;
 
 .aside-header .logo-mini{
 display: none;
+}
+
+.aside-main{
+height: calc(100% - 160px);
+overflow: auto; 
 }
 
 .aside-main .playlist{
@@ -128,6 +153,10 @@ display: none;
 
 .aside-main .playlist li{
   margin-top: 10px;
+}
+.aside-footer{
+  padding-top: 5px;
+  height: 65px;
 }
 
 .aside-footer .download {
@@ -154,15 +183,29 @@ display: none;
 
 /***************** CONTENT *****************/
 
+.content-header{
+  height: 80px;
+  justify-content: flex-end;
+  align-items: center;
+  line-height: 30px;
+  background-color: rgb(0, 0, 0);
+}
+.content-main{
+  padding-top: 10px;
+}
 .categorie li{
-  flex-basis: 20px;
+  padding: 5px 5px 2px 5px;
 }
 
 /***************** /CONTENT *****************/
 
 /****************** /MAIN *******************/
 
-
+/******************* AZIONI *******************/
+.card:hover i{
+  display: block;
+}
+/******************* AZIONI *******************/
 /************* RESPONSIVE ************/
 
 @media (max-width: 1100px){
@@ -232,4 +275,4 @@ display: none;
   }
 
  }
-}
+
