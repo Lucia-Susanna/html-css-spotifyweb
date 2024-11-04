@@ -8,7 +8,7 @@
   font-size: .8rem;
 }
 
-.debug{
+.debg{
   background-color: rgba(9, 127, 9, 0.18);
   min-width: 10px;
   min-height: 10px;
@@ -45,6 +45,7 @@
 
 img{
   max-width: 100%;
+  max-height: 100%;
 }
 
 .bold{
@@ -217,11 +218,38 @@ height: calc(100% - 160px);
 /****************** /MAIN *******************/
 /****************** BAR *******************/
 .bar{
-  padding: 10px 0 10px 0px;
+  padding: 10px 5px 10px 5px;
+  background-color: black;
 }
 
-.bar .brano{
+.bar i{
+  color: white;
+}
+
+.bar i.play{
+  font-size: 1.7rem;
+}
+
+.brano{
   width: 230px;
+}
+
+.brano .copertina{
+  width: 60px;
+}
+
+.brano .title{
+  padding: 7px;
+  width: 120px;
+
+}
+
+.brano .btn{
+  width: 50px;
+}
+
+.brano .btn li{
+  padding: 5px;
 }
 
 .riproduzione{
@@ -230,6 +258,7 @@ height: calc(100% - 160px);
 
 .riproduzione .play{
   height: 50%;
+  line-height: 2rem;
 }
 
 .riproduzione .time{
@@ -240,17 +269,23 @@ height: calc(100% - 160px);
   padding: 5px 10px 0 10px;
 }
 
+.time span{
+  font-size: .6rem;
+}
+
 .time .time-bar{
   width: 90%;
-  height: 2px;
+  height: 3px;
+  margin: 20px;
   background-color: #5A5A5A;
   border-radius: 25px;
 }
 
 .time .real-time{
   width: 25%;
-  height: 2px;
-  background-color: #C1C1C1;
+  height: 3px;
+  background-color: #BDBDBD;
+  border-radius: 25px;
 }
 
 .bar .comandi{
@@ -263,14 +298,16 @@ height: calc(100% - 160px);
 
 .comandi .volume-bar{
   width: 120px;
-  height: 1.5px;
+  height: 3px;
   background-color: #5A5A5A;
+  border-radius: 25px;
 }
 
 .comandi .real-volume{
   width: 30%;
-  height: 1.5px;
-  background-color: #7B7D81;
+  height: 3px;
+  background-color: #B1B1B1;
+  border-radius: 25px;
 }
 /****************** /BAR *******************/
 
@@ -336,6 +373,9 @@ height: calc(100% - 160px);
   .aside-footer p{
     display: none;
   }
+
+  .brano .btn ul{
+    flex-direction: column;
 
 }
 
