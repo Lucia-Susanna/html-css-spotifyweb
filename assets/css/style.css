@@ -253,6 +253,25 @@ height: calc(100% - 160px);
   background-color: #C1C1C1;
 }
 
+.bar .comandi{
+  width: 230px;
+}
+
+.comandi li{
+  padding: 5px;
+}
+
+.comandi .volume-bar{
+  width: 120px;
+  height: 1.5px;
+  background-color: #5A5A5A;
+}
+
+.comandi .real-volume{
+  width: 30%;
+  height: 1.5px;
+  background-color: #7B7D81;
+}
 /****************** /BAR *******************/
 
 /******************* AZIONI *******************/
