@@ -11,7 +11,7 @@
 .debug{
   background-color: rgba(9, 127, 9, 0.18);
   min-width: 10px;
-  min-height: 30px;
+  min-height: 10px;
   border: 1px solid black;
 }
 
@@ -150,7 +150,7 @@ height: calc(100% - 160px);
 
 .aside-main .playlist li{
   margin-top: 10px;
- 
+  
 }
 
 .aside-footer{
@@ -191,7 +191,7 @@ height: calc(100% - 160px);
   align-items: center;
   line-height: 30px;
   background-color: rgb(0, 0, 0);
- 
+  position: sticky;
 }
 
 .categorie li{
@@ -223,12 +223,35 @@ height: calc(100% - 160px);
 .bar .brano{
   width: 230px;
 }
-.bar div{
-  margin: 0 30px 0 10px;
+
+.riproduzione{
+  width: 40%;
 }
 
+.riproduzione .play{
+  height: 50%;
+}
 
+.riproduzione .time{
+  height: 50%;
+}
 
+.riproduzione .play li{
+  padding: 5px 10px 0 10px;
+}
+
+.time .time-bar{
+  width: 90%;
+  height: 2px;
+  background-color: #5A5A5A;
+  border-radius: 25px;
+}
+
+.time .real-time{
+  width: 25%;
+  height: 2px;
+  background-color: #C1C1C1;
+}
 
 /****************** /BAR *******************/
 
