@@ -42,6 +42,9 @@
 /****************** /STRUTTURA ************/
 
 /***************** UTILITY *************/
+h2{
+  font-size: 1.5rem;
+}
 
 img{
   max-width: 100%;
@@ -61,6 +64,9 @@ img{
   flex-direction: column;
 }
 
+.wrap{
+  flex-wrap: wrap;
+}
 .txt-center{
   text-align: center;
 }
@@ -78,10 +84,6 @@ img{
 
 .white{
   color: white;
-}
-
-.green{
-  color: #B3FF32;
 }
 
 .button{
@@ -104,9 +106,9 @@ main{
 main .aside{
   display: flex;
   flex-direction: column;
-  width: 230px;
+  width: 200px;
   background-color: black;
-  padding-left: 20px;
+  
   font-size: .9rem;
   font-weight: 600;
 }
@@ -114,13 +116,14 @@ main .aside{
 main .content{
  background-color: black; 
  width: calc(100% - 220px);
-  overflow: auto;
+ overflow: auto;
 }
 
 /***************** ASIDE ******************/
 .aside-header .logo{
 width: 140px;  
 margin: 20px 0 20px 0;
+margin-left: 10px;
 }
 
 .aside-header .logo-mini{
@@ -129,34 +132,54 @@ display: none;
 
 .aside-main{
 height: calc(100% - 160px);
+}
 
+.aside-main .green{
+  width: 2px;
+  height: 20px;
+  border-radius: 20%;
+  background-color: black;
+}
+
+.aside-main .add{
+  margin-top: 7px;
+}
+.aside-main .add i{  
+  color: black;
+  background-color: #A6A6A6;
+  padding: 7px;
+  margin-right: 5px;
 }
 
 .aside-main .playlist{
-  margin-top: 7px;
-  height: calc(100% - 120px);
-  overflow: auto; 
+  margin-top: 4px;
+  height: calc(100% - 150px);
+  overflow: auto;
 }
 
 .aside-main img.icon{
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   margin-right: 5px;
-  margin-bottom: 10px;
+  margin-left: 8px;
+  margin-bottom: 5px;
 }
 
-.aside-main .txt{
-  line-height: 25px;
+.aside-main .new-playlist{
+  margin: 10px 0 0 10px;
+
 }
 
 .aside-main .playlist li{
   margin-top: 10px;
+  margin-left: 10px;
   
 }
 
 .aside-footer{
   padding-top: 5px;
   height: 65px;
+  margin-left: 10px;
 }
 
 .aside-footer .download {
@@ -191,8 +214,12 @@ height: calc(100% - 160px);
   justify-content: flex-end;
   align-items: center;
   line-height: 30px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.167);
   position: sticky;
+}
+
+.content .col{
+  margin: 20px 0 20px 0;
 }
 
 .categorie li{
@@ -315,6 +342,17 @@ height: calc(100% - 160px);
 .card:hover i{
   display: block;
 }
+
+.aside-main ul.btn li.home:active .green.home{
+  background-color: #B7F83F;
+}
+.aside-main ul.btn li.search:active .green.search{
+  background-color: #B7F83F;
+}
+.aside-main ul.btn li.lib:active .green.lib{
+  background-color: #B7F83F;
+}
+
 /******************* AZIONI *******************/
 /************* RESPONSIVE ************/
 
@@ -377,7 +415,8 @@ height: calc(100% - 160px);
   .brano .btn ul{
     flex-direction: column;
 
-}
+  }
+}  
 
 @media (max-height: 350px){
  .aside-main{
@@ -387,8 +426,8 @@ height: calc(100% - 160px);
   .aside-footer{
     display: none;
   }
-  .playlist{
+
+  .new-playlist, .playlist{
     display: none;
   }
- }
-
+}
