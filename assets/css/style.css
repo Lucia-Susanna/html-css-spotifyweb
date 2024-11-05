@@ -8,12 +8,12 @@
   font-size: .8rem;
 }
 
-.deug{
+/* .debug{
   background-color: rgba(9, 127, 9, 0.18);
   min-width: 10px;
   min-height: 10px;
   border: 1px solid black;
-}
+} */
 
 /****************** STRUTTURA ************/
 .container{
@@ -115,7 +115,7 @@ main .aside{
 
 main .content{
  background-color: #141922; 
- width: calc(100% - 220px);
+ width: calc(100% - 200px);
  overflow: auto;
 }
 
@@ -378,6 +378,10 @@ height: calc(100% - 160px);
   width: 40%;
   height: 2px;
   background-color: #B7F83F;
+}
+
+.button:hover{
+  cursor: pointer;
 }
 /******************* AZIONI *******************/
 /************* RESPONSIVE ************/
