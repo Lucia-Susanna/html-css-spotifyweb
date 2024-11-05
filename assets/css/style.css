@@ -8,7 +8,7 @@
   font-size: .8rem;
 }
 
-.debg{
+.deug{
   background-color: rgba(9, 127, 9, 0.18);
   min-width: 10px;
   min-height: 10px;
@@ -114,7 +114,7 @@ main .aside{
 }
 
 main .content{
- background-color: black; 
+ background-color: #141922; 
  width: calc(100% - 220px);
  overflow: auto;
 }
@@ -214,8 +214,10 @@ height: calc(100% - 160px);
   justify-content: flex-end;
   align-items: center;
   line-height: 30px;
-  background-color: rgba(0, 0, 0, 0.167);
+  background-color: #080b127b;
   position: sticky;
+  top: 0px;
+  z-index: 2;
 }
 
 .content .col{
@@ -226,7 +228,7 @@ height: calc(100% - 160px);
   font-size: 0.7rem;
   padding: 5px 5px 2px 5px;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-left: 20px;
   padding-bottom: 5px;
 }
@@ -251,7 +253,7 @@ height: calc(100% - 160px);
 /****************** BAR *******************/
 .bar{
   padding: 10px 5px 10px 5px;
-  background-color: black;
+  background-color: #282828;
 }
 
 .bar i{
@@ -263,11 +265,13 @@ height: calc(100% - 160px);
 }
 
 .brano{
-  width: 230px;
+  width: 200px;
+  padding-right: 20px;
 }
 
 .brano .copertina{
-  width: 60px;
+  margin-top: 10px;
+  height: 50px;
 }
 
 .brano .title{
@@ -321,7 +325,11 @@ height: calc(100% - 160px);
 }
 
 .bar .comandi{
-  width: 230px;
+  width: 200px;
+  padding-left: 20px;
+}
+.comandi ul{
+  width: 100%;
 }
 
 .comandi li{
@@ -329,7 +337,7 @@ height: calc(100% - 160px);
 }
 
 .comandi .volume-bar{
-  width: 120px;
+  width: 100%;
   height: 3px;
   background-color: #5A5A5A;
   border-radius: 25px;
@@ -340,6 +348,10 @@ height: calc(100% - 160px);
   height: 3px;
   background-color: #B1B1B1;
   border-radius: 25px;
+}
+
+.comandi .volume{
+  width: 60%;
 }
 /****************** /BAR *******************/
 
@@ -426,9 +438,18 @@ height: calc(100% - 160px);
     display: none;
   }
 
+  .brano{
+    width: 30%;
+  }
+
+  .comandi{
+    width: 30%;
+  }
+
   .brano .btn ul{
     flex-direction: column;
-
+    justify-content: center;
+    padding: 1px;
   }
 }  
 
